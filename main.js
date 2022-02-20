@@ -33,6 +33,7 @@ form.addEventListener('submit', function(event) {
 function renderNoteItem(noteObj) {
     const itemEl = document.createElement('p')
     itemEl.p = noteObj.id
-    itemEl.innerHTML = `${noteObj.title}<br>${noteObj.body}`
+    itemEl.innerHTML = `${noteObj.title}<br>${noteObj.body}<p delete>delete<p> <p edit> Edit<p>
+    // <span class="material-icons-outlined"></span>`
     notesOutput.appendChild(itemEl)
 }
